@@ -1,0 +1,87 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&family=Roboto+Condensed:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: gray;
+}
+
+ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background: #222;
+    margin: 2px 0px;
+}
+
+
+    ul li ul.dropdown {
+        width: auto;
+        background: black;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+
+ul li a:hover {
+    background: #222;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: #333;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #333;
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 2opx;
+    color: white;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid black;
+}
+
